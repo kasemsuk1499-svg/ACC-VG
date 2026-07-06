@@ -81,3 +81,24 @@ Deck สามารถตั้ง rule ได้ว่าเล่นแบบ
 3. เพิ่มห้อง PvP แบบ action log + sync state
 4. เพิ่มตัวแก้ข้อมูลการ์ดแบบ Admin
 5. เชื่อมกับโปรเจกต์ ANIME CARD COLLECTION เดิม เช่น collection, gacha, salary
+
+
+## อัปเดต v0.2
+
+เพิ่มระบบที่จำเป็นสำหรับเริ่มเล่นจริง:
+
+- ระบบล็อคอิน Google ด้วย Firebase Auth + Guest Mode
+- ระบบจัดเด็ค: Anime Path Deck + Battle Deck + ตรวจ Deck Rules
+- ระบบเปิดกาชาแบบมีแอนิเมชัน Flip Reveal
+- โปรไฟล์ผู้เล่นบันทึกลง localStorage แยกตาม UID
+- เพิ่มการ์ดตัวอย่างให้เด็ค 50 ใบผ่านกฎ max 4 copies ได้
+
+ไฟล์สำคัญที่เพิ่ม/แก้:
+
+```text
+app/auth/firebase-auth.js
+config/firebase-config.js
+github/AUTH_SETUP.md
+```
+
+ก่อนใช้ Google Login บน GitHub Pages ให้เพิ่มโดเมน `kasemsuk1499-svg.github.io` ใน Firebase Authentication → Settings → Authorized domains
