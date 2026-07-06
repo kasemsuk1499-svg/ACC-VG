@@ -1,0 +1,210 @@
+[
+  {
+    "id": "ACC-G0-STARTER-001",
+    "name": "นักเรียนผู้เริ่มต้น",
+    "rarity": "N",
+    "type": "UNIT",
+    "grade": 0,
+    "animeConcept": "Academy Battle",
+    "styleTags": ["ACADEMY"],
+    "roles": ["STARTER"],
+    "power": 6000,
+    "shield": 5000,
+    "critical": 1,
+    "drive": 1,
+    "trigger": null,
+    "supportPower": 5000,
+    "image": "assets/cards/ACC-G0-STARTER-001.png",
+    "salary": { "coinPerHour": 8, "gemPerDay": 0 },
+    "skills": [
+      {
+        "id": "STARTER_DRAW_ON_RIDE",
+        "name": "เริ่มต้นการต่อสู้",
+        "timing": "onRideBy",
+        "oncePerFight": true,
+        "cost": [],
+        "condition": {},
+        "effects": [{ "type": "draw", "value": 1 }]
+      }
+    ]
+  },
+  {
+    "id": "ACC-G1-MAGIC-001",
+    "name": "ผู้ช่วยเวทสายฟ้า",
+    "rarity": "R",
+    "type": "UNIT",
+    "grade": 1,
+    "animeConcept": "Magic School",
+    "styleTags": ["MAGIC", "ACADEMY"],
+    "roles": ["SUPPORT", "BOOSTER"],
+    "power": 8000,
+    "shield": 5000,
+    "critical": 1,
+    "drive": 1,
+    "trigger": null,
+    "supportPower": 8000,
+    "image": "assets/cards/ACC-G1-MAGIC-001.png",
+    "salary": { "coinPerHour": 12, "gemPerDay": 0 },
+    "skills": [
+      {
+        "id": "BOOST_MAGIC_PLUS",
+        "name": "ซัพพอร์ตวงเวท",
+        "timing": "onBoost",
+        "cost": [],
+        "condition": { "vanguardHasTag": "MAGIC" },
+        "effects": [{ "type": "power", "target": "boostedUnit", "value": 5000, "until": "endOfBattle" }]
+      }
+    ]
+  },
+  {
+    "id": "ACC-G2-SHONEN-001",
+    "name": "นักดาบประกายฟ้า",
+    "rarity": "SR",
+    "type": "UNIT",
+    "grade": 2,
+    "animeConcept": "Shonen Battle",
+    "styleTags": ["SHONEN"],
+    "roles": ["ATTACKER"],
+    "power": 10000,
+    "shield": 5000,
+    "critical": 1,
+    "drive": 1,
+    "trigger": null,
+    "supportPower": 5000,
+    "image": "assets/cards/ACC-G2-SHONEN-001.png",
+    "salary": { "coinPerHour": 18, "gemPerDay": 0 },
+    "skills": [
+      {
+        "id": "ON_ATTACK_SOUL_POWER",
+        "name": "คมดาบเร่งจังหวะ",
+        "timing": "onAttack",
+        "cost": [{ "type": "soulBlast", "value": 1 }],
+        "condition": { "thisIsAttacker": true },
+        "effects": [{ "type": "power", "target": "self", "value": 10000, "until": "endOfBattle" }]
+      }
+    ]
+  },
+  {
+    "id": "ACC-G3-MAGIC-ACE-001",
+    "name": "จอมเวทแดงผู้ก้องฟ้า",
+    "rarity": "UR",
+    "type": "UNIT",
+    "grade": 3,
+    "animeConcept": "Explosion Magic",
+    "styleTags": ["MAGIC", "ISEKAI"],
+    "roles": ["ACE", "VANGUARD"],
+    "power": 13000,
+    "shield": 0,
+    "critical": 1,
+    "drive": 2,
+    "trigger": null,
+    "supportPower": 0,
+    "resonanceRide": true,
+    "image": "assets/cards/ACC-G3-MAGIC-ACE-001.png",
+    "salary": { "coinPerHour": 40, "gemPerDay": 2 },
+    "skills": [
+      {
+        "id": "RESONANCE_MAGIC_BURST",
+        "name": "เรโซแนนซ์: เวทระเบิด",
+        "timing": "onResonanceRide",
+        "cost": [],
+        "condition": {},
+        "effects": [
+          { "type": "draw", "value": 1 },
+          { "type": "frontRowPower", "value": 10000, "until": "endOfTurn" }
+        ]
+      },
+      {
+        "id": "ACE_ATTACK_COUNTER_BLAST",
+        "name": "ยิงเวทปิดเกม",
+        "timing": "onAttack",
+        "cost": [{ "type": "counterBlast", "value": 1 }],
+        "condition": { "thisIsVanguard": true },
+        "effects": [
+          { "type": "power", "target": "self", "value": 15000, "until": "endOfBattle" },
+          { "type": "critical", "target": "self", "value": 1, "until": "endOfBattle" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ACC-G1-TRIG-CRIT-001",
+    "name": "ประกายคริติคอล",
+    "rarity": "R",
+    "type": "TRIGGER_UNIT",
+    "grade": 1,
+    "animeConcept": "Trigger",
+    "styleTags": ["ANY"],
+    "roles": ["TRIGGER"],
+    "power": 8000,
+    "shield": 15000,
+    "critical": 1,
+    "drive": 1,
+    "trigger": "CRIT",
+    "triggerPower": 10000,
+    "supportPower": 8000,
+    "image": "assets/cards/ACC-G1-TRIG-CRIT-001.png",
+    "salary": { "coinPerHour": 6, "gemPerDay": 0 },
+    "skills": []
+  },
+  {
+    "id": "ACC-G1-TRIG-DRAW-001",
+    "name": "ประกายจั่วการ์ด",
+    "rarity": "R",
+    "type": "TRIGGER_UNIT",
+    "grade": 1,
+    "animeConcept": "Trigger",
+    "styleTags": ["ANY"],
+    "roles": ["TRIGGER"],
+    "power": 8000,
+    "shield": 5000,
+    "critical": 1,
+    "drive": 1,
+    "trigger": "DRAW",
+    "triggerPower": 10000,
+    "supportPower": 8000,
+    "image": "assets/cards/ACC-G1-TRIG-DRAW-001.png",
+    "salary": { "coinPerHour": 6, "gemPerDay": 0 },
+    "skills": []
+  },
+  {
+    "id": "ACC-G0-TRIG-HEAL-001",
+    "name": "ประกายฟื้นฟู",
+    "rarity": "R",
+    "type": "TRIGGER_UNIT",
+    "grade": 0,
+    "animeConcept": "Trigger",
+    "styleTags": ["ANY"],
+    "roles": ["TRIGGER"],
+    "power": 5000,
+    "shield": 15000,
+    "critical": 1,
+    "drive": 1,
+    "trigger": "HEAL",
+    "triggerPower": 10000,
+    "supportPower": 5000,
+    "image": "assets/cards/ACC-G0-TRIG-HEAL-001.png",
+    "salary": { "coinPerHour": 6, "gemPerDay": 0 },
+    "skills": []
+  },
+  {
+    "id": "ACC-G3-TRIG-OVER-001",
+    "name": "ประกายเหนือขีดจำกัด",
+    "rarity": "SC",
+    "type": "TRIGGER_UNIT",
+    "grade": 3,
+    "animeConcept": "Over Trigger",
+    "styleTags": ["ANY"],
+    "roles": ["TRIGGER", "LIMITED"],
+    "power": 50000,
+    "shield": 50000,
+    "critical": 1,
+    "drive": 1,
+    "trigger": "OVER",
+    "triggerPower": 100000000,
+    "supportPower": 0,
+    "image": "assets/cards/ACC-G3-TRIG-OVER-001.png",
+    "salary": { "coinPerHour": 120, "gemPerDay": 10 },
+    "skills": []
+  }
+]
