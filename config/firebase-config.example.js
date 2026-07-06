@@ -1,10 +1,10 @@
 // คัดลอกไฟล์นี้เป็น firebase-config.js แล้วใส่ค่าของโปรเจกต์คุณ
 export const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT.firebaseapp.com',
-  databaseURL: 'https://YOUR_PROJECT-default-rtdb.firebaseio.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID'
-};
+  apiKey: "AIzaSyBAAd_Sxn2Gyq6meBU9qQs-RaTMAQuq40E",
+  authDomain: "anime-vg.firebaseapp.com",
+  projectId: "anime-vg",
+  storageBucket: "anime-vg.firebasestorage.app",
+  messagingSenderId: "5444647133",
+  appId: "1:5444647133:web:4a25e8a66c9603d15d0334",
+  measurementId: "G-9L5JPYS1QD"
+} ;
