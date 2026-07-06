@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANIME CARD COLLECTION Fight Starter</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ANIME CARD COLLECTION</p>
+        <h1>Fight System Starter</h1>
+        <p>ต้นแบบระบบ Grade / Anime Path / Trigger / Support / Gacha / Salary</p>
+      </div>
+      <div class="controls">
+        <button id="btnLoad">โหลดข้อมูล</button>
+        <button id="btnStart" disabled>เริ่มสู้กับ AI</button>
+        <button id="btnAi" disabled>ให้ AI เล่นเทิร์น</button>
+        <button id="btnGacha" disabled>เปิดกาชา x10</button>
+        <button id="btnSalary" disabled>รับเงินเดือน</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>ข้อมูลผู้เล่น</h2>
+        <pre id="profileBox">ยังไม่ได้โหลดข้อมูล</pre>
+      </article>
+      <article class="panel">
+        <h2>สนาม</h2>
+        <div id="fieldBox" class="field-box">ยังไม่ได้เริ่มเกม</div>
+      </article>
+      <article class="panel wide">
+        <h2>Log</h2>
+        <pre id="logBox">-</pre>
+      </article>
+      <article class="panel wide">
+        <h2>การ์ดตัวอย่าง</h2>
+        <div id="cardsBox" class="cards"></div>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="./app/main.js"></script>
+</body>
+</html>
